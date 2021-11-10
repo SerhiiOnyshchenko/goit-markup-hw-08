@@ -1,0 +1,39 @@
+@import "../utils/colors";
+@import "../utils/transition";
+
+.page-header {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+	z-index: 100;
+	background: getColor("main-bg-color");
+	border-bottom: 1px solid #ececec;
+	&__list {
+		padding: 24px 15px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+	}
+}
+
+.logo {
+	display: inline-block;
+
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+
+	color: getColor("blue-color");
+	&__text--black {
+		color: getColor("main-color");
+	}
+	&__text--white {
+		color: getColor("revers-color");
+	}
+}

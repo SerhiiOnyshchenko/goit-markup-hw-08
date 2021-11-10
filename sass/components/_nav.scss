@@ -1,0 +1,49 @@
+@import "../utils/colors";
+@import "../utils/transition";
+
+.nav {
+	&__list {
+		display: flex;
+		margin-left: 93px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		color: getColor("main-color");
+
+		font-weight: 500;
+		letter-spacing: 0.02em;
+
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+
+	&__link {
+		color: inherit;
+		transition: color getTransition("time-anime") getTransition("time-function");
+		&::after {
+			content: "";
+			display: none;
+			position: absolute;
+			bottom: -32px;
+			width: 100%;
+			height: 4px;
+			background-color: getColor("blue-color");
+			border-radius: 2px;
+		}
+		&:hover,
+		&:focus {
+			color: getColor("blue-color");
+		}
+	}
+
+	&__link--active {
+		color: getColor("blue-color");
+		&::after {
+			display: block;
+		}
+	}
+}

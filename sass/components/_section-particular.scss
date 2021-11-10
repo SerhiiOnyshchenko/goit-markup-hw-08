@@ -1,0 +1,35 @@
+@import "../utils/colors";
+@import "../utils/transition";
+
+.section-particular {
+	padding-bottom: 0;
+}
+
+.particular {
+	display: flex;
+	justify-content: space-between;
+
+	&__box-icon {
+		display: flex;
+		justify-content: center;
+		padding: 25px 0;
+		margin-bottom: 30px;
+		border-radius: 4px;
+		background-color: getColor("another-bg-color");
+	}
+
+	&__title {
+		margin-bottom: 10px;
+
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		display: block;
+		width: 270px;
+		color: getColor("another-color");
+		line-height: 1.8;
+	}
+}

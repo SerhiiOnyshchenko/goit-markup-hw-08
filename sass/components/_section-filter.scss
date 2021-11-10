@@ -1,0 +1,39 @@
+@import "../utils/colors";
+@import "../utils/transition";
+
+.section-filter {
+	&__container {
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+}
+
+.filter {
+	&__item {
+		margin: 0 4px;
+	}
+
+	&__btn {
+		padding: 6px 22px;
+		border-radius: 4px;
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.65;
+		letter-spacing: 0.03em;
+		background: #f5f4fa;
+
+		transition: color getTransition("time-anime") getTransition("time-function"),
+			background getTransition("time-anime") getTransition("time-function");
+		&:hover,
+		&:focus {
+			color: getColor("revers-color");
+			background: getColor("link-hf-color");
+			cursor: pointer;
+		}
+	}
+}
