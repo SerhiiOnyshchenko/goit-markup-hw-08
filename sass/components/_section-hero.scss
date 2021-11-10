@@ -1,11 +1,11 @@
 @import "../utils/colors";
 
 .section-hero {
-	padding: 200px 0;
+	padding: 118px 0;
 	text-align: center;
 	position: relative;
 	background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url(../images/bg-image.jpg);
+		url(../images/bg-image480px.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -17,8 +17,32 @@
 		margin-bottom: 30px;
 
 		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.38;
+		font-size: 26px;
+		line-height: 1.62;
+		letter-spacing: 0.06em;
 		text-transform: uppercase;
 	}
 }
+// .section-hero {
+// 	padding: 200px 0;
+// 	text-align: center;
+// 	position: relative;
+// 	background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+// 		url(../images/bg-image.jpg);
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	background-size: cover;
+// 	color: getColor("revers-color");
+// 	&__container {
+// 	}
+
+// 	&__title {
+// 		margin-bottom: 30px;
+
+// 		font-weight: 900;
+// 		font-size: 44px;
+// 		line-height: 1.38;
+//       letter-spacing: 0.06em;
+// 		text-transform: uppercase;
+// 	}
+// }

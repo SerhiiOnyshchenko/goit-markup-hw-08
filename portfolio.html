@@ -29,6 +29,26 @@
             <a href="./" class="page-header__item logo"
                >Web<span class="logo__text--black">Studio</span></a
             >
+            <!-- button menu -->
+            <button
+               class="menu-toggle js-open-menu"
+               aria-expanded="false"
+               aria-controls="mobile-menu"
+            >
+               <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+               >
+                  <path
+                     fill-rule="evenodd"
+                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                     clip-rule="evenodd"
+                  ></path>
+               </svg>
+            </button>
             <!-- Навігація -->
             <nav class="page-header__item nav">
                <ul class="nav__list">
@@ -93,9 +113,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project1.jpg"
+                              src="./images/project1-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -114,9 +134,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project2.jpg"
+                              src="./images/project2-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -137,9 +157,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project3.jpg"
+                              src="./images/project3-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -160,9 +180,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project4.jpg"
+                              src="./images/project4-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -181,9 +201,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project5.jpg"
+                              src="./images/project5-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -202,9 +222,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project6.jpg"
+                              src="./images/project6-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -223,9 +243,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project7.jpg"
+                              src="./images/project7-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -246,9 +266,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project8.jpg"
+                              src="./images/project8-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -267,9 +287,9 @@
                         <div class="featyre-link__box-img">
                            <img
                               class="featyre-link__image"
-                              src="./images/project9.jpg"
+                              src="./images/project9-450px.jpg"
                               alt="project"
-                              width="370"
+                              width="450"
                            />
                            <p class="featyre-link__text">
                               Технокряк это современная площадка распространения коронавируса.
@@ -386,5 +406,73 @@
             </div>
          </div>
       </footer>
+
+      <!-- mobile-menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+         <button class="menu-toggle js-close-menu">
+            <svg
+               fill="currentColor"
+               viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg"
+               width="40"
+               height="40"
+            >
+               <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+               ></path>
+            </svg>
+         </button>
+
+         <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link mobile-menu__link--active" href="./">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+         </ul>
+         <!-- Контакти -->
+         <div class="mobile-menu-contacts">
+            <ul class="menu-contacts">
+               <li class="menu-contacts__item">
+                  <a class="menu-contacts__link--tel" href="tel:+380961111111">
+                     +38 096 111 11 11</a
+                  >
+               </li>
+               <li class="menu-contacts__item">
+                  <a class="menu-contacts__link--email" href="mailto:info@devstudio.com">
+                     info@devstudio.com</a
+                  >
+               </li>
+            </ul>
+            <ul class="menu-sociales">
+               <li class="menu-sociales__item">
+                  <a class="menu-sociales__link" href="">Instagram</a>
+               </li>
+               <li class="menu-sociales__item">
+                  <a class="menu-sociales__link" href="">Twitter</a>
+               </li>
+               <li class="menu-sociales__item">
+                  <a class="menu-sociales__link" href="">Facebook</a>
+               </li>
+               <li class="menu-sociales__item">
+                  <a class="menu-sociales__link" href="">LinkedIn</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <script
+         defer
+         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+         crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
    </body>
 </html>
