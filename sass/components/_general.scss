@@ -1,6 +1,10 @@
 @import "../utils/colors";
 @import "../utils/transition";
-
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 body {
 	position: relative;
 	height: auto;
