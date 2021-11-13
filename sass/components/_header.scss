@@ -4,9 +4,9 @@
 .page-header {
 	position: fixed;
 	top: 0;
-	left: 50%;
-	width: 100%;
-	transform: translateX(-50%);
+	left: 0;
+	right: 0;
+	width: 100vw;
 	z-index: 100;
 	background: getColor("main-bg-color");
 	border-bottom: 1px solid #ececec;

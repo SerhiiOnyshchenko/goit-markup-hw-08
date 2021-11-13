@@ -19,6 +19,8 @@
 }
 
 .card {
+	max-width: 450px;
+	margin: 0 auto;
 	&__image {
 		width: 100%;
 	}

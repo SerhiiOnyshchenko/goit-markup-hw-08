@@ -273,12 +273,24 @@
                <h2 class="section-teams__title general-title">Наша команда</h2>
                <ul class="section-teams__list">
                   <li class="section-teams__item card">
-                     <img
-                        class="card__image"
-                        src="./images/team1-450px.jpg"
-                        alt="Спіробітник"
-                        width="450"
-                     />
+                     <picture>
+                        <source
+                           srcset="./images/team1-768px.jpg"
+                           media="(min-width: 768px) and (max-width: 1199px)"
+                           sizes="354"
+                        />
+                        <source
+                           srcset="./images/team1-1200px.jpg"
+                           media="(min-width: 1200px)"
+                           sizes="270"
+                        />
+                        <img
+                           class="card__image"
+                           src="./images/team1-480px.jpg"
+                           alt="Спіробітник"
+                           max-width="450"
+                        />
+                     </picture>
                      <h3 class="card__name">Игорь Демьяненко</h3>
                      <span class="card__job" lang="en">Product Designer</span>
                      <ul class="social">
@@ -310,12 +322,24 @@
                      </ul>
                   </li>
                   <li class="section-teams__item card">
-                     <img
-                        class="card__image"
-                        src="./images/team2-450px.jpg"
-                        alt="Спіробітник"
-                        width="450"
-                     />
+                     <picture>
+                        <source
+                           srcset="./images/team2-768px.jpg"
+                           media="(min-width: 768px) and (max-width: 1199px)"
+                           sizes="354"
+                        />
+                        <source
+                           srcset="./images/team2-1200px.jpg 3x"
+                           media="(min-width: 1200px)"
+                           sizes="270"
+                        />
+                        <img
+                           class="card__image"
+                           src="./images/team2-480px.jpg"
+                           alt="Спіробітник"
+                           max-width="450"
+                        />
+                     </picture>
                      <h3 class="card__name">Ольга Репина</h3>
                      <span class="card__job" lang="en">Frontend Developer</span>
                      <ul class="social">
