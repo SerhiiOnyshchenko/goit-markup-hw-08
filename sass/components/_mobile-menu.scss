@@ -33,6 +33,7 @@
 .menu-toggle:focus {
 	color: getColor("blue-color");
 }
+
 .menu-container {
 	display: flex;
 	flex-direction: column;
@@ -41,11 +42,12 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	padding: 48px 40px;
 	z-index: 999;
 
 	background: getColor("main-bg-color");
+
 	transform: translateX(100%);
 	transition: transform getTransition("time-anime") getTransition("time-function");
 }
@@ -70,7 +72,9 @@
 		font-size: 40px;
 		line-height: 1.175;
 		letter-spacing: 0.02em;
+
 		color: inherit;
+
 		transition: color getTransition("time-anime") getTransition("time-function");
 		&:hover,
 		&:focus {

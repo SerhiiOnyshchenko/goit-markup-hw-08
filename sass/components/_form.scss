@@ -124,6 +124,13 @@
 	cursor: pointer;
 	fill: getColor("link-hf-color");
 }
+
+@media (max-width: 475px) {
+	.form__item--checkbox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 // .form {
 // 	display: flex;
 // 	flex-direction: column;

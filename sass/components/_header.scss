@@ -11,11 +11,10 @@
 	background: getColor("main-bg-color");
 	border-bottom: 1px solid #ececec;
 	&__list {
-		padding: 16px 15px;
+		padding: 0 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0;
 	}
 
 	&__item {
@@ -25,6 +24,7 @@
 
 .logo {
 	display: inline-block;
+	padding: 16px 0;
 
 	font-family: Raleway;
 	font-weight: 700;
