@@ -5,6 +5,7 @@
 	justify-content: center;
 
 	&__item {
+		max-width: 450px;
 		box-shadow: none;
 		transition: box-shadow getTransition("time-anime") getTransition("time-function");
 		&:hover,
@@ -18,7 +19,6 @@
 }
 
 .featyre-link {
-	max-width: 450px;
 	&__box-img {
 		position: relative;
 		overflow: hidden;
@@ -55,6 +55,7 @@
 	}
 
 	&__title {
+		margin-bottom: 4px;
 		color: getColor("main-color");
 		font-weight: 700;
 		font-size: 18px;
@@ -72,4 +73,29 @@
 .filter-list__item:hover .featyre-link__text,
 .filter-list__item:focus .featyre-link__text {
 	bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.filter-list {
+		justify-content: space-between;
+		&__item {
+			max-width: 354px;
+			height: 100%;
+			&:first-child .featyre-link__border {
+				padding-bottom: 56px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.filter-list__item {
+		max-width: 370px;
+		&:nth-last-child(-n + 3) {
+			margin-bottom: 0;
+		}
+		&:first-child .featyre-link__border {
+			padding-bottom: 20px;
+		}
+	}
 }
