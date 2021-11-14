@@ -2,12 +2,12 @@
 @import "../utils/transition";
 
 .particular {
+	display: flex;
+	flex-direction: column;
+	margin: -15px;
 	&__item {
 		text-align: center;
-		margin-bottom: 30px;
-		&:last-child {
-			margin-bottom: 0;
-		}
+		margin: 15px;
 	}
 	&__box-icon {
 		display: flex;
@@ -35,14 +35,11 @@
 @media screen and (min-width: 768px) {
 	.particular {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		&__item {
-			width: 354px;
+			flex-basis: calc((100% - 4 * 15px) / 2);
 			text-align: start;
-			&:nth-last-child(-n + 2) {
-				margin-bottom: 0;
-			}
 		}
 	}
 }
@@ -52,14 +49,7 @@
 		padding-bottom: 0;
 	}
 
-	.particular {
-		display: flex;
-		justify-content: space-between;
-		&__item {
-			width: 270px;
-			&:nth-child(n) {
-				margin-bottom: 0;
-			}
-		}
+	.particular__item {
+		flex-basis: calc((100% - 8 * 15px) / 4);
 	}
 }
