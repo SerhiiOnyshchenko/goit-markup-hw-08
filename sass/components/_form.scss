@@ -48,6 +48,8 @@
 
 	&__input-icon {
 		position: absolute;
+		width: 15px;
+		height: 12px;
 		top: 50%;
 		left: 16px;
 		transform: translateY(-25%);
@@ -76,10 +78,11 @@
 	&__item--checkbox {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		align-items: center;
 		margin-top: 20px;
 
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 1.71;
 		letter-spacing: 0.03em;
 	}
@@ -105,6 +108,7 @@
 	}
 
 	&__link {
+		margin-left: 5px;
 		color: getColor("link-hf-color");
 		text-decoration: underline;
 	}

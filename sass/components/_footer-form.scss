@@ -24,7 +24,11 @@
 		color: rgba(255, 255, 255, 0.6);
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		border-radius: 4px;
-		background-color: inherit;
+		background-color: transparent;
+		&:-webkit-autofill {
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgba(255, 255, 255, 0.6);
+		}
 		&:hover,
 		&:focus {
 			outline: none;
